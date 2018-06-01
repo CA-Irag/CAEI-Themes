@@ -161,11 +161,11 @@ function cto_generate_feature_settings(){
 
 	//admin_features
 	add_settings_section('cto-admin-feat-options', 'Admin Features', 'cto_admin_feat_options', 'cto_caei_features');
-	add_settings_field('admin-messages','Admin Messages','cto_activate_message_field','cto_caei_features','cto-admin-feat-options');
+	add_settings_field('admin-messages','Enable Admin Messages','cto_activate_message_field','cto_caei_features','cto-admin-feat-options');
 
 	//widgets_features
 	add_settings_section('cto-widget-feat-options', 'Widget Features', 'cto_widget_feat_options', 'cto_caei_features');
-	add_settings_field('admin-widgets','Widgets','cto_activate_widgets_field','cto_caei_features','cto-widget-feat-options');
+	add_settings_field('admin-widgets','Enable Widgets','cto_activate_widgets_field','cto_caei_features','cto-widget-feat-options');
 }
 
 // SECTIONS CALLBACK
@@ -178,23 +178,12 @@ function cto_widget_feat_options(){
 
 // FIELDS CALLBACK
 function cto_activate_message_field(){
-	$activate_message = esc_attr( get_option( 'activate_message' ) );
-
-	echo '<span><input type="radio" name="activate_message" value="Disable" ';
-	if($activate_message == 'Disable' || $activate_message == '') echo 'checked="checked"'; 
-	echo '> Show</span>';
-	echo '<span style="margin-left: 3em;" ><input type="radio" name="activate_message" value="Enable" ';
-	if($activate_message == 'Enable') echo 'checked="checked"'; 
-	echo '> Hide</span>';
+	if(get_option( 'activate_message' ) == '1') $activate_message = 'checked' ;
+	echo '<input type="checkbox" name="activate_message" value="1" '. $activate_message .'>';	
+	echo ' <span class="description">Enables the feature containing a form for newsletters and contacts.</span>';
 }
 function cto_activate_widgets_field(){
-	$activate_widgets = esc_attr( get_option( 'activate_widgets' ) );
-
-	echo '<span><input type="radio" name="activate_widgets" value="Disable" ';
-	if($activate_widgets == 'Disable' || $activate_widgets == '') echo 'checked="checked"'; 
-	echo '> Show</span>';
-	echo '<span style="margin-left: 3em;" ><input type="radio" name="activate_widgets" value="Enable" ';
-	if($activate_widgets == 'Enable') echo 'checked="checked"'; 
-	echo '> Hide</span>';
+	if(get_option( 'activate_widgets' ) == '1') $activate_widgets = 'checked' ;
+	echo '<input type="checkbox" name="activate_widgets" value="1" '. $activate_widgets .'>';	
 }
  ?>

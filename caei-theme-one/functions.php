@@ -15,6 +15,7 @@ require get_template_directory(). '/inc/widgets.php';
 require get_template_directory(). '/inc/functions-customize.php';
 require get_template_directory(). '/inc/functions-admin.php';
 require get_template_directory(). '/inc/enqueues.php';
+require get_template_directory(). '/inc/custom-post-type.php';
 
 
 ?>
