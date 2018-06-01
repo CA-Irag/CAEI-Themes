@@ -1,0 +1,84 @@
+/*
+Theme Name: CAEI Theme One
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: CA Irag
+Author URI: https://wordpress.org/
+Description: Basic theme for proffesional websites.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, blog
+Text Domain: caeithemeone
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ********************************************* FREE FONTS */
+
+@font-face {
+	font-family: Bebas;  
+	src: url("fonts/BEBAS.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Helvetica Neue Medium;  
+	src: url("fonts/HelveticaNeue Medium.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Bold;  
+	src: url("fonts/Oswald-Bold.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Extra Light;  
+	src: url("fonts/Oswald-ExtraLight.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Heavy Regular;  
+	src: url("fonts/OswaldHeavy-Regular.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Light;  
+	src: url("fonts/Oswald-Light.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Medium;  
+	src: url("fonts/Oswald-Medium.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald Regular;  
+	src: url("fonts/Oswald-Regular.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Oswald SemiBold;  
+	src: url("fonts/Oswald-SemiBold.ttf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Myriad Pro;  
+	src: url("fonts/MyriadPro-Regular.otf");  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Frutiger Normal;  
+	src: url("fonts/Frutiger-Normal.ttf");  
+	font-weight: normal;  
+}
+
