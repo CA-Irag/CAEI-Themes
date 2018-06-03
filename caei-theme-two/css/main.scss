@@ -1,0 +1,80 @@
+
+@import 'components';
+@import 'pages/home';
+@import 'pages/blog';
+@import 'pages/blog-single';
+
+
+body {
+	margin: 0;
+	font-family: $_font-secondary;
+	font-size: 14px;
+	a {
+		text-decoration: none;
+		transition: color 200ms linear;
+		color: $_color-link;
+		&:hover { color: $_color-link-hover; }
+	}
+	ul {
+		list-style: none; padding: 0;
+		li { padding: 1px 0; }
+	}
+	h1, h2, h3, h4, h5 { color: $_color-docks; font-family: $_font-title; }
+	header.header {
+		font-family: $_font-primary;
+		background-color: $_color-docks;
+		color: $_color-shade-white;
+		min-height: 50px;
+		padding: 0 10px;
+		box-shadow: 0px 1px 30px 0px $_color-shadow;
+		.navbar-header {
+			float: left;
+			width: 30%;
+			.navbar-brand {
+				font-family: $_font-logo;
+				line-height: 50px;
+				font-size: 28px;
+				color: $_color-shade-white;
+				span { color: $_color-secondary; }
+			}
+		}
+		.nav-header-main {
+			float: right;
+			width: 70%;
+			.menu {
+				text-align: right;
+				margin: 0;
+				line-height: 50px;
+				li {
+					display: inline; padding: 3px 10px;
+					a { color: $_color-shade-white; &:hover { color: $_color-link-hover2; } }
+				}
+			}
+		}
+	}
+	footer.footer {
+		font-family: $_font-primary;
+		background-color: $_color-docks;
+		color: $_color-shade-white;
+		padding: 0 10px;
+		box-shadow: 0px -1px 30px 0px $_color-shadow;
+		.footer-top {
+			.menu {
+				text-align: center;
+				margin: 0;
+				line-height: 50px;
+				li {
+					display: inline; padding: 3px 10px;
+					a { color: $_color-shade-white; &:hover { color: $_color-link-hover2; } }
+				}
+			}
+		}
+		.footer-bottom { padding: 10px; text-align: center; background-color: $_color-docks-inner; }
+	}
+	.content-main {
+		min-height: 94vh;
+		padding: 15px 0;
+		box-shadow: 0px 0px 30px 0px $_color-shadow;
+	}
+}
+
