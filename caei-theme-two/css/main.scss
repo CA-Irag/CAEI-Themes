@@ -1,5 +1,8 @@
 
+@import 'colors';
+@import 'variables';
 @import 'components';
+@import 'animations';
 @import 'pages/home';
 @import 'pages/blog';
 @import 'pages/blog-single';
@@ -76,5 +79,8 @@ body {
 		padding: 15px 0;
 		box-shadow: 0px 0px 30px 0px $_color-shadow;
 	}
+
+	// LOADING BLOGS
+	&.loading{ cursor: wait; }
 }
 

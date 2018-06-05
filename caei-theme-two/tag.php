@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 <div class="content-main container">
 	<div class="main-column left">
-
+		<span hidden id="query_identifier" data-querytype='tag'>
+			<?php
+			$tag = get_queried_object();
+    		echo $tag->slug ?>
+		</span>
 		<div class="blog_post_holder">			
 			<?php
 			if( have_posts() ):
@@ -37,6 +41,11 @@
 				</div>
 			</div>
 			<?php endif; endwhile; endif; ?>
+		</div>
+		<div class="blog_posts_loader text-center">
+			<div class="blog_loading_animation" data-page="1" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+				<div class="loader" style="display: none;"></div>
+			</div>
 		</div>
 
 	</div>

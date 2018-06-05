@@ -13,5 +13,6 @@ add_theme_support('html5', array('comment-list', 'comment-form'));
 
 require get_template_directory(). '/inc/enqueues.php';
 require get_template_directory(). '/inc/widgets.php';
+require get_template_directory(). '/inc/ajax.php';
 
 ?>

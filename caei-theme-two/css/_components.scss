@@ -1,5 +1,3 @@
-@import 'colors';
-@import 'variables';
 
 hr.double { border-style: double; }
 hr.dash { border-style: dashed; }
@@ -18,7 +16,7 @@ hr.dash { border-style: dashed; }
 	&.left { float: left; }
 }
 
-.container { max-width: $_container_max_width; margin: 0 auto; }
+.container { max-width: $_container_max_width; margin: 0 auto; box-sizing: border-box; }
 .clear-fix {
 	overflow: auto;
 	clear:both;

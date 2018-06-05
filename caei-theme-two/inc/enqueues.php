@@ -8,6 +8,10 @@ function caeithemetwo_script_enqueue(){
 
 	wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js', true);
 
+	if( is_home() || is_category() || is_tag() ){
+		wp_enqueue_script('loaderjs', get_template_directory_uri().'/js/blog-loading.js', array(), '1.0.0', true);
+	}
+
 }
 add_action('wp_enqueue_scripts', 'caeithemetwo_script_enqueue');
 ?>

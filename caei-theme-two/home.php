@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="content-main container">
 	<div class="main-column left">
-
+		<span hidden id="query_identifier" data-querytype='all'></span>
 		<div class="blog_post_holder">			
 			<?php
 			if( have_posts() ):
@@ -37,6 +37,12 @@
 				</div>
 			</div>
 			<?php endif; endwhile; endif; ?>
+			<div class="clear-fix"></div>
+		</div>
+		<div class="blog_posts_loader">
+			<div class="blog_loading_animation" data-page="1" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+				<div class="loader" style="display: none;"></div>
+			</div>
 		</div>
 
 	</div>
